@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Website</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+      
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: white;
+      }
+      
+      .header h1 {
+        font-size: 50px;
+      }
+      
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {   
+        float: left;
+        width: 75%;
+      }
+      
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+      
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+      
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+      
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+      </style>
+      
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+</style>
+
+
+      </style>
+      <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+      
+      <div class="header">
+        <h1>Website of</h1>
+        <p>Nuttasorn Permpool</p>
+      </div>
+      
+      <div class="topnav">
+        <a href="https://www.facebook.com/profile.php?id=100005805638842">Facebook</a>
+        <a href="https://line.me/ti/p/GDP5Cw5dKO">QC line</a>
+        <a href="https://www.youtube.com/@Techcast/about">My super idol</a>
+        <a href="https://www.facebook.com/profile.php?id=100011459587602" style="float:right">A stalker</a>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>ไอหน้าหล่อนี่ชื่อ เติ้ล</h2>
+            <h5>เกิดวันที่ 9 สิงหาคม 2548</h5>
+            <div><img src="images/128038536_1469682516568589_6341749546628473914_n.jpg" alt="" width="300" height="300"></div>
+            <p>ที่อยู่</p>
+            <p>75/226 แขวงทุ่งพญาไท เขตราชเทวี จังหวัดกรุงเทพมหานคร รหัสไปรษณีย์ 10400</p>
+          </div>
+          <div class="card">
+            <h2>My idol</h2>
+            <a href="https://www.youtube.com/@Techcast">Techcast</a>
+            <br>
+            <br>
+            <div><img src="https://yt3.googleusercontent.com/ytc/AGIKgqPQU_eCTTnEOSMG62i7hLqVBTzLZRNJ2j0FZS2D=s176-c-k-c0x00ffffff-no-rj" alt=""width="300"></div>
+            <p>จุดประสงค์ของช่อง</p>
+            <p>"ช่อง Techcast ตั้งใจทำเพื่อให้ทุกคนได้เรียนรู้เทคโนโลยีใหม่ๆ ไปด้วยกัน
+
+              อยากให้ผู้ชมได้ทั้ง ความรู้, ความสนุก ไม่ว่าจะเป็นสาย dev หรือ ไม่ใช่ก็ตาม
+              ดังนั้น มาร่วมเดินทาง และ เรียนรู้สิ่งใหม่ไปพร้อมๆกันนะครับ"</p>
+              <img src="images/48c9522aaa31a27582216bec737e92ce.gif" alt="" width="200">
+              <img src="images/banana-crying-cat.gif" alt="">
+              <img src="images/48c9522aaa31a27582216bec737e92ce.gif" alt="" width="200">
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <div><img src="images/40355775_883448385192008_528740023512596480_n.jpg" alt=""></div>
+            <p>ไม่ชอบผัก สนใจในการprogramming ชอบนั่ง(นอน)อยู่หน้าคอม ชอบเล่นเกม</p>
+          </div>
+          <div class="card">
+            <h3><a href="https://www.facebook.com/profile.php?id=100011459587602">Photo by a Stalker </a></h3>
+            <div><img src="images/80451252_1119596668432309_6278530910103011328_n.jpg" alt="cool pic" height="200"></div>
+            <div><img src="images/73230224_1100543740337602_6987359938834071552_n.jpg" alt="" height="200"></div>
+            <div><img src="images/61752457_960266857698625_7529300011754979328_n.jpg" alt="" height="200"></div>
+          </div>
+          <div class="card">
+            <h3>Contact</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt=""style="float:left" width="10%"><a href="https://www.facebook.com/profile.php?id=100005805638842">
+            <p>Facebook</p></a>
+            <img src="https://pngimg.com/d/phone_PNG48928.png" alt="" style="float: left" width="10%">
+            <p>083-929-1638</p> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/LINE_New_App_Icon_%282020-12%29.png/480px-LINE_New_App_Icon_%282020-12%29.png" alt="" style="float: left" width="10%"><a href="https://line.me/ti/p/GDP5Cw5dKO">
+            <p>Line</p></a>
+
+
+          </div>
+        </div>
+      </div>
+      
+
+
+      </body>
+      </html>
+      
